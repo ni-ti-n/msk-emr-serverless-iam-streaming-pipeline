@@ -2,6 +2,9 @@
 
 This repository contains the CloudFormation template and sample code to deploy a **secure, serverless streaming pipeline** on AWS. The solution demonstrates how to ingest, process, and analyze streaming data using **Amazon MSK Serverless** (for Kafka-based data ingestion), **Amazon EMR Serverless** (for Spark-based stream processing), and **AWS IAM** for authentication—eliminating the need for complex certificate and key management.
 
+**For more detailed steps, please checkout the blog** 
+
+[Build a secure serverless streaming pipeline with Amazon MSK Serverless, Amazon EMR Serverless and IAM](https://aws.amazon.com/blogs/big-data/build-a-secure-serverless-streaming-pipeline-with-amazon-msk-serverless-amazon-emr-serverless-and-iam/)
 ---
 
 ## Architecture Overview
@@ -25,7 +28,3 @@ The workflow consists of the following steps:
 - **Reproducibility:** Infrastructure as code via CloudFormation.
 
 ---
-
-## References
-
-- **Original Blog Post:** [Build a secure serverless streaming pipeline with Amazon MSK Serverless, Amazon EMR Serverless and IAM](https://aws.amazon.com/blogs/big-data/build-a-secure-serverless-streaming-pipeline-with-amazon-msk-serverless-amazon-emr-serverless-and-iam/)
