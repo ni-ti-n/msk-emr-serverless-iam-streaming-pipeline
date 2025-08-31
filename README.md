@@ -5,7 +5,6 @@ This repository contains the CloudFormation template and sample code to deploy a
 **For more detailed steps, please checkout the blog** 
 
 [Build a secure serverless streaming pipeline with Amazon MSK Serverless, Amazon EMR Serverless and IAM](https://aws.amazon.com/blogs/big-data/build-a-secure-serverless-streaming-pipeline-with-amazon-msk-serverless-amazon-emr-serverless-and-iam/)
----
 
 ## Architecture Overview
 
@@ -17,8 +16,6 @@ The workflow consists of the following steps:
    2. The Spark Streaming job retrieves data from the Kafka topic, stores it in Amazon Simple Storage Service (Amazon S3), and creates a corresponding table in the AWS Glue Data Catalog. As it continuously consumes data from the Kafka topic, the job stays up-to-date with the latest streaming data. With checkpointing enabled, the job tracks processed records, allowing it to resume from where it left off in case of a failure, providing seamless data processing.
    3. To analyze this data, users can use Athena, a serverless query service. Athena enables interactive SQL-based exploration of data directly in Amazon S3 without the need for complex infrastructure management.
 
----
-
 ## Key Features
 
 - **Serverless Architecture:** No cluster management for MSK or EMR.
@@ -26,5 +23,3 @@ The workflow consists of the following steps:
 - **Integration:** Seamless ingestion, processing, and querying using AWS Glue Data Catalog and Athena.
 - **Scalability:** Handles large-scale streaming workloads with ease.
 - **Reproducibility:** Infrastructure as code via CloudFormation.
-
----
